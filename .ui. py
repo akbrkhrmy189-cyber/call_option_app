@@ -1,0 +1,24 @@
+
+```python
+# ui.py
+def display_menu():
+    print("Welcome to Call Options Management")
+    print("1. Add a Contact")
+    print("2. View Contacts")
+    print("3. Delete a Contact")
+    print("4. Exit")
+
+def get_user_option():
+    return input("Choose an option (1-4): ")
+
+def get_contact_info():
+    name = input("Enter the contact name: ")
+    number = input("Enter the contact number: ")
+    return name, number
+
+def show_contacts(contacts):
+    print("\nContacts List:")
+    for index, (name, number) in enumerate(contacts.items()):
+        print(f"{index + 1}. {name}: {number}")
+    print("") 
+...
